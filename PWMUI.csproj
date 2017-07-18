@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e80fcae8-a50d-4929-9ab6-b8dca0e0006a</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>PWMUI</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PWMUICtl" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="PWMUI\AdvancedATMChecker.cs" />
+    <Compile Include="PWMUI\AdvancedOptionsPanel.cs" />
+    <Compile Include="PWMUI\PMPageFunction.cs" />
+    <Compile Include="PWMUI\AdvancedSettingsPage.cs" />
+    <Compile Include="PWMUI\AlarmsPage.cs" />
+    <Compile Include="PWMUI\App.cs" />
+    <Compile Include="PWMUI\IPlanSettingPlane.cs" />
+    <Compile Include="PWMUI\AdvancedSettingsPanel.cs" />
+    <Compile Include="PWMUI\AlarmsPanel.cs" />
+    <Compile Include="PWMUI\BatteryDetailsItem.cs" />
+    <Compile Include="PWMUI\BatteryDetailsPanel.cs" />
+    <Compile Include="PWMUI\BatteryGauge.cs" />
+    <Compile Include="PWMUI\IPMTabPanel.cs" />
+    <Compile Include="PWMUI\BatteryPanel.cs" />
+    <Compile Include="PWMUI\BatteryConditionItem.cs" />
+    <Compile Include="PWMUI\BatteryStretchPanel.cs" />
+    <Compile Include="PWMUI\BatteryTime.cs" />
+    <Compile Include="PWMUI\DotNet.cs" />
+    <Compile Include="PWMUI\CheckForDotNet.cs" />
+    <Compile Include="PWMUI\CpuMeter.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardReturnEventHandler.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardModeChangeEventHandler.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardResult.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardMode.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardReturnEventArguments.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardModeChangeEventArguments.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardStartParam.cs" />
+    <Compile Include="PWMUI\CreatePlanWizard.cs" />
+    <Compile Include="PWMUI\CreatePlanWizardStartPage.cs" />
+    <Compile Include="PWMUI\ISubWindowPanel.cs" />
+    <Compile Include="PWMUI\DisplayTurnOffPanel.cs" />
+    <Compile Include="PWMUI\DynamicBrightnessControlPanel.cs" />
+    <Compile Include="PWMUI\EventsPage.cs" />
+    <Compile Include="PWMUI\ExportMessage.cs" />
+    <Compile Include="PWMUI\GreenConfigPanel.cs" />
+    <Compile Include="PWMUI\GreenPanel.cs" />
+    <Compile Include="PWMUI\GreenStandardsPanel.cs" />
+    <Compile Include="PWMUI\IdleTimersPage.cs" />
+    <Compile Include="PWMUI\IntelGfxPowerSettingChecker.cs" />
+    <Compile Include="PWMUI\PMJumpList.cs" />
+    <Compile Include="PWMUI\LidClosePanel.cs" />
+    <Compile Include="PWMUI\LowerBrightnessChecker.cs" />
+    <Compile Include="PWMUI\LowerRefreshRateChecker.cs" />
+    <Compile Include="PWMUI\MainWindow.cs" />
+    <Compile Include="PWMUI\UpdateBatteryStrechEventHandler.cs" />
+    <Compile Include="PWMUI\UpdateAirplaneModeEventHandler.cs" />
+    <Compile Include="PWMUI\Message.cs" />
+    <Compile Include="PWMUI\PerformanceStretchPanel.cs" />
+    <Compile Include="PWMUI\IPMControl.cs" />
+    <Compile Include="PWMUI\PlanNamePanelItem.cs" />
+    <Compile Include="PWMUI\PlanNamePanel.cs" />
+    <Compile Include="PWMUI\PMResizeThumbPeer.cs" />
+    <Compile Include="PWMUI\PMUserControlPeer.cs" />
+    <Compile Include="PWMUI\PMWindowPeer.cs" />
+    <Compile Include="PWMUI\PMCheckBox.cs" />
+    <Compile Include="PWMUI\PMFixedWidthColumn.cs" />
+    <Compile Include="PWMUI\PMLinkAcText.cs" />
+    <Compile Include="PWMUI\LinkTextClickedEventHandler.cs" />
+    <Compile Include="PWMUI\PMLinkTextBlock.cs" />
+    <Compile Include="PWMUI\PMRadioButton.cs" />
+    <Compile Include="PWMUI\MathUtil.cs" />
+    <Compile Include="PWMUI\TimePicker.cs" />
+    <Compile Include="PWMUI\TimeSelectedChangedEventHandler.cs" />
+    <Compile Include="PWMUI\TimeSelectedChangedRoutedEventArgs.cs" />
+    <Compile Include="PWMUI\PowerButtonPanel.cs" />
+    <Compile Include="PWMUI\PowerUseSlider.cs" />
+    <Compile Include="PWMUI\Positions.cs" />
+    <Compile Include="PWMUI\ResizeThumb.cs" />
+    <Compile Include="PWMUI\RestorePanel.cs" />
+    <Compile Include="PWMUI\res\DotNetErrorMessages.cs" />
+    <Compile Include="PWMUI\eFrequency.cs" />
+    <Compile Include="PWMUI\eAction.cs" />
+    <Compile Include="PWMUI\eDayOfWeek.cs" />
+    <Compile Include="PWMUI\PowerAgendaSettings.cs" />
+    <Compile Include="PWMUI\PowerAgendaListData.cs" />
+    <Compile Include="PWMUI\PowerAgendaXmlPath.cs" />
+    <Compile Include="PWMUI\PowerAgendaLoader.cs" />
+    <Compile Include="PWMUI\Task.cs" />
+    <Compile Include="PWMUI\ScheduledTaskList.cs" />
+    <Compile Include="PWMUI\PowerAgendaSaver.cs" />
+    <Compile Include="PWMUI\ActionCommandLine.cs" />
+    <Compile Include="PWMUI\CommandLineHelper.cs" />
+    <Compile Include="PWMUI\ActionCommandLineToActionConverter.cs" />
+    <Compile Include="PWMUI\ActionCommandLineToStartTimeConverter.cs" />
+    <Compile Include="PWMUI\ActionCommandLineToEndTimeConverter.cs" />
+    <Compile Include="PWMUI\ActionCommandLineToFrequencyConverter.cs" />
+    <Compile Include="PWMUI\PowerAgendaSettingInformer.cs" />
+    <Compile Include="PWMUI\PowerAgendasInformer.cs" />
+    <Compile Include="PWMUI\SleepPanel.cs" />
+    <Compile Include="PWMUI\StartUp.cs" />
+    <Compile Include="PWMUI\SubWindow.cs" />
+    <Compile Include="PWMUI\SubWindowOkClickEventHandler.cs" />
+    <Compile Include="PWMUI\SubWindowOkClickEventHandler2.cs" />
+    <Compile Include="PWMUI\SubWindowCancelClickEventHandler.cs" />
+    <Compile Include="PWMUI\PMComboBoxItem.cs" />
+    <Compile Include="PWMUI\PMComboBox.cs" />
+    <Compile Include="PWMUI\IPlanItem.cs" />
+    <Compile Include="PWMUI\ComboBoxPlanItem.cs" />
+    <Compile Include="PWMUI\EffectImage.cs" />
+    <Compile Include="PWMUI\EventsPanel.cs" />
+    <Compile Include="PWMUI\GlobalAlarmsPanel.cs" />
+    <Compile Include="PWMUI\GlobalEventsPanel.cs" />
+    <Compile Include="PWMUI\GlobalPowerSettingsPanel.cs" />
+    <Compile Include="PWMUI\LidCloseAdvancedClickEventHandler.cs" />
+    <Compile Include="PWMUI\IdleTimersPanel.cs" />
+    <Compile Include="PWMUI\AfterSelectionChangedHandler.cs" />
+    <Compile Include="PWMUI\MainTabControl.cs" />
+    <Compile Include="PWMUI\PlanPanel.cs" />
+    <Compile Include="PWMUI\EffectOfSettingChangeEventHandler.cs" />
+    <Compile Include="PWMUI\CheckGlobalSettingsEventHandler.cs" />
+    <Compile Include="PWMUI\eImportStatus.cs" />
+    <Compile Include="PWMUI\SelectedPowerPlanEventHandler.cs" />
+    <Compile Include="PWMUI\ISubWindowPanel2.cs" />
+    <Compile Include="PWMUI\PMControlFinder.cs" />
+    <Compile Include="PWMUI\PMSliderControl.cs" />
+    <Compile Include="PWMUI\PowerManagementOptionsPanel.cs" />
+    <Compile Include="PWMUI\PMSpinControl.cs" />
+    <Compile Include="PWMUI\SliderPlanItem.cs" />
+    <Compile Include="PWMUI\SpinPlanItem.cs" />
+    <Compile Include="PWMUI\SystemPerformanceChecker.cs" />
+    <Compile Include="PWMUI\SystemSettingsPage.cs" />
+    <Compile Include="PWMUI\SystemSettingsPanel.cs" />
+    <Compile Include="PWMUI\ThemeChanger.cs" />
+    <Compile Include="PWMUI\TitlePlanItem.cs" />
+    <Compile Include="PWMUI\PowerStatusChangeEventHandler.cs" />
+    <Compile Include="PWMUI\ResumeEventHandler.cs" />
+    <Compile Include="PWMUI\SuspendEventHandler.cs" />
+    <Compile Include="PWMUI\WtsConsoleConnectEventHandler.cs" />
+    <Compile Include="PWMUI\WtsConsoleDisconnectEventHandler.cs" />
+    <Compile Include="PWMUI\GetBatteryStatusEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeActivePowerSchemeEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeACDCPowerSourceEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeVideoPowerdownTimeoutEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeDiskPowerdownTimeoutEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeStandbyTimeoutEventHandler.cs" />
+    <Compile Include="PWMUI\PowerUseSliderPositionChangeEventHandler.cs" />
+    <Compile Include="PWMUI\UpdateBatteryRemainingTimeEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeCalculatingRemainingBatteryEventHandler.cs" />
+    <Compile Include="PWMUI\UpdateACPowerConsumptionEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeGreenStateEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeCpuTurboStateEventHandler.cs" />
+    <Compile Include="PWMUI\ShowEditAgendaWindowEventHandler.cs" />
+    <Compile Include="PWMUI\ChangeGpuTurboStateEventHandler.cs" />
+    <Compile Include="PWMUI\POWERBROADCAST_SETTING.cs" />
+    <Compile Include="PWMUI\POINTAPI.cs" />
+    <Compile Include="PWMUI\MINMAXINFO.cs" />
+    <Compile Include="PWMUI\SettingChangeWasCanceledEventHandler.cs" />
+    <Compile Include="PWMUI\SettingChangeWasAppliedEventHandler.cs" />
+    <Compile Include="PWMUI\PowerAgendasPanel.cs" />
+    <Compile Include="PWMUI\IdleTimerValue.cs" />
+    <Compile Include="PWMUI\PowerAgendaSettingsPanel.cs" />
+    <Compile Include="PWMUI\UICustomizationsPanel.cs" />
+    <Compile Include="PWMUI\SliderPositionChangeEventHandler.cs" />
+    <Compile Include="PWMUI\UsePanel.cs" />
+    <Compile Include="PWMUI\WizardStateItem.cs" />
+    <Compile Include="PWMUI\DatePicker.cs" />
+    <Compile Include="PWMUI\DateSelectedChangedEventHandler.cs" />
+    <Compile Include="PWMUI\DateSelectedChangedRoutedEventArgs.cs" />
+    <Compile Include="PWMUI\ValuePicker.cs" />
+    <Compile Include="XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <EmbeddedResource Include="PWMUI.res.DotNetErrorMessages.resources" />
+  </ItemGroup>
+</Project>
