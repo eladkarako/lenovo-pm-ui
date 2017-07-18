@@ -3,7 +3,7 @@
 Lenovo's Power Manager (PWMUI, PWMUICtl) is <strong>so very buggy</strong>,
 mostly because of the resource-handling of the .Net 2.0/3.0 it uses,
 
-When you update you PC with a newer version of .Net (3.5/4/...)
+When you update your PC with a newer version of .Net (3.5/4/...)
 where the resource-loading is slightly different (on demand/on the fly by default),
 it will take the application about 10 minutes (!) to start the main UI.
 
